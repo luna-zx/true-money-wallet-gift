@@ -15,8 +15,8 @@ const example = async () => {
             "https://gift.truemoney.com/campaign/?v=xxxxxxxxxxxxxxxxxxxxxx"
         );
         console.log(
-            `เจ้าของซอง : ${redeemed.gift_owner} \n` + 
-            `จำนวนเงิน : ${redeemed.gift_amount}`
+            `รับซองจากคุณ : ${redeemed.gift_owner} \n` + 
+            `เป็นจำนวนเงิน : ${redeemed.gift_amount}`
         );
     } catch (error: any) {
         if (error instanceof TruewalletGiftError) {
